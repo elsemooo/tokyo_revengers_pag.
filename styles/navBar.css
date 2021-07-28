@@ -48,6 +48,7 @@ nav.containerNav{
     pointer-events: none;
     transform: translate(-50%,-50%);
     font-size: 10vmin;
+    z-index: 40;
 }
 .closeBtn{
     background: none;
