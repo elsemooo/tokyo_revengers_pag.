@@ -11,6 +11,7 @@ nav.containerNav{
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 30;
     justify-content: space-between;
     width: 100vw;
 }
