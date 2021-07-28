@@ -1,0 +1,135 @@
+@import url(main.css);
+:root{
+    width:100vw;
+}
+body{
+    background-color: #aaa;
+}
+.containerNav{
+    background-color: rgba(73, 73, 73, 0.829);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+.logoBtn{
+    width: 200px;
+    margin: 10px 0 5px 10px;
+}
+.menuBtn{
+    display: flex;
+    background: none;
+    border: none;
+    margin: 30px;
+    cursor: pointer;
+}
+.menuImg{
+    width: 30px;
+    display: flex;
+}
+.botonera{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    background-color: rgb(56, 56, 56);
+    opacity: 0 ;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    font-size: 10vmin;
+}
+.closeBtn{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5%;
+    cursor: pointer;
+    right: 5%;
+}
+.botones{
+    position: relative;
+}
+.closeImg{
+    width: 30px;
+}
+a.link:hover::after{
+    content: "";
+    animation-name: link-animation;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    height: 3px;
+    border-radius:4px;
+    opacity: 0;
+    background-color: var(--font-color);
+}
+@keyframes link-animation {
+    100%{
+    opacity: 1;
+    }
+}
+.botonera.active{
+    opacity: 1;
+    transition:all .3s;
+    pointer-events: auto;
+}
+li, a{
+    list-style: none;
+    position: relative;
+    color: var(--font-color);
+    text-decoration: none;
+}
+@media (min-width: 950px){
+    .menuBtn{
+        display: none;
+    }
+    .menuImg{
+        display: none;
+    }
+    .closeBtn{
+        display: none;
+    }
+    .botonera{
+        width: 100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 1.5;
+        background:none ;
+        opacity: 1 ;
+        top: 40px;
+        right: 40px;
+        left: 40px;
+        pointer-events: all;
+        transform: translate(0 ,0 );
+        font-size: 30px;
+    }
+    .botones{
+        margin: 10px;
+        position: static;
+        display: flex;
+    }
+    .botones.end{
+        margin-right: 50px;
+    }
+    #titulo{
+        display: inline-block;
+        font-size: 30px;
+    }
+}
