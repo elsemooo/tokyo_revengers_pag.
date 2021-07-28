@@ -5,10 +5,12 @@
 body{
     background-color: #aaa;
 }
-.containerNav{
+nav.containerNav{
     background-color: rgba(73, 73, 73, 0.829);
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
     justify-content: space-between;
     width: 100vw;
 }

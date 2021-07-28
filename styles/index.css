@@ -1,0 +1,33 @@
+@import url('main.css');
+body {
+    background-image: url(../images/bg_parking_night.jpg);
+    margin-top: 85px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1#title{
+    display: inline-block;
+    font-size: 50px;
+    color: var(--font-color);
+    margin: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 550px){
+    h1#title{
+        font-size: 10vw;
+    }
+}
+@media (max-width:500px){
+    .image_tall{
+        width: 80vw;
+    }
+}
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image_tall{
+    width: 300px;
+}
