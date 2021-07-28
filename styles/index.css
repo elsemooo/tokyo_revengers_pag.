@@ -31,4 +31,18 @@ h1#title{
 }
 .image_tall{
     width: 300px;
+    position: relative;
+}
+.image_tall:hover{
+    animation-name: micaela;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes micaela {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 20px;
+    }
 }
