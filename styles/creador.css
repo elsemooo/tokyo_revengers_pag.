@@ -1,0 +1,57 @@
+@import url(main.css);
+@import url(normalize.css);
+@import url(navBar.css);
+*{color: black;}
+body{
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+section{
+    display: grid;
+    justify-items: center;
+}
+.mainText{
+    margin: 0 0 20px 0;
+    font-weight: 1000;
+    font-size: 4.5vw;
+}
+.textDescription{
+    font-weight: 600;
+}
+h1{
+    margin-top: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display:grid;
+    color: black;
+    background-color: var(--font-color) ;
+}
+@media (min-width: 950px){
+    .container{
+        height:75vh;
+        display: grid;
+    }
+    section {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    .mainText { 
+        grid-area: 1 / 1 / 2 / 4;
+        font-size: 2.5vw;
+    }
+    .textDescription { 
+        grid-area: 2 / 1 / 4 / 3; 
+        font-size: 2vw;
+    }
+    .image { grid-area: 2 / 3 / 4 / 4; }
+    img.image{
+        margin: 10px;
+    }
+}

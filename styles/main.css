@@ -3,9 +3,21 @@
 :root{
     --font-color: rgba(251, 255, 237, 0.892);
 }
+body {
+    background-image: url(../images/bg_parking_night.jpg);
+    margin-top: 90px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    color: var(--font-color);
     font-family: "Didact Gothic", sans-serif;
+}
+body{
+    background-color: black;
 }
