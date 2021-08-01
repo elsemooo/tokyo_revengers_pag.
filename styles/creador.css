@@ -11,15 +11,16 @@ section{
     justify-items: center;
 }
 .mainText{
-    margin: 0 0 20px 0;
-    font-weight: 1000;
-    font-size: 4.5vw;
+    margin: 0 0 2vmin 0;
+    font-weight: bold;
+    font-size: 4.5vmin;
 }
 .textDescription{
     font-weight: 600;
 }
 h1{
     margin-top: 0;
+    font-size: 5vmin;
 }
 .container{
     width: 80%;
@@ -32,26 +33,28 @@ h1{
 @media (min-width: 950px){
     .container{
         height:75vh;
+        grid-template-rows: max-content 1fr;
         display: grid;
     }
-    section {
+    section{
         display: grid;
-        justify-items: start;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto auto;
-        grid-column-gap: 10px;
-        grid-row-gap: 0px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 4vmin 1fr;
+        gap: 10px;
     }
-    .mainText { 
-        grid-area: 1 / 1 / 2 / 4;
-        font-size: 2.5vw;
+    b.mainText{
+        /* height: 10px; */
+        /* margin-bottom: 20px; */
+        grid-column: 1/-1;
+        justify-self: start;
     }
-    .textDescription { 
-        grid-area: 2 / 1 / 4 / 3; 
-        font-size: 2vw;
+    .image{
+        grid-row:2/3 ;
+        grid-column: 2/3;
+        height: 70%;
+        align-self: center;
     }
-    .image { grid-area: 2 / 3 / 4 / 4; }
-    img.image{
-        margin: 10px;
+    p.textDescription{
+        font-size: 4vmin;
     }
 }
