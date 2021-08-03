@@ -1,4 +1,4 @@
-@import url('main.css');
+@import url(main.css);
 body {
     background-image: url(../images/bg_parking_night.jpg);
     margin-top: 90px;
@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 h1#title{
     display: inline-block;
@@ -45,4 +46,20 @@ h1#title{
     100%{
         bottom: 20px;
     }
+}
+.pdf{
+    display: none;
+}
+embed.pdf.active{
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top:3%;
+    width: 80%;
+    height: 95%;
+    transform: translate(-50%);
+    /* background-color: rgba(0 , 0 , 0 , .5); */
+    /* outline: 100px black; */
+    /* overflow:hidden; */
 }
