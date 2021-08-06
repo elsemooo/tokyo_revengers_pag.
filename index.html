@@ -9,19 +9,23 @@
     <meta name="author" content="Khalid samanamud" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c533591037.js" crossorigin="anonymous"></script>
     <title>tokyo revengers</title>
+    <!-- estilos -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script defer src="js/script.js"></script>
-    <link rel="stylesheet" href="styles/index.css">
+    
 </head>
 <body>
+    <div class="sombra"></div>
     <nav class="containerNav">
         <a href="index.html"><img class="logoBtn" src="images/logo_white.png" alt=""></a>
-        <button id="openMenu" class="menuBtn"><img class="menuImg" src="images/menuBtn.png" alt=""></button>
+        <button id="openMenu" class="menuBtn"><i class="menuImg fas fa-bars"></i></button>
         <ul id="menuToggle" class="botonera">
-            <button class="closeBtn">
-                <img id="closeMenu" class="closeImg" src="images/closeMenuBtn.png" alt="">
+            <button id="closeMenu" class="closeBtn">X
             </button>
             <li class="botones start"><a class="link" href="#">Adaptaciones</a></li>
             <li class="botones"><a class="link" href="#">Personajes</a></li>
@@ -37,24 +41,37 @@
                 <figure>
                     <img id="manga1" class="image_tall" src="images/portadas_del_manga/comic_01.jpg">
                     <div class="containerPdf"><embed id="pdf1" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers1.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf1" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_02.jpg">
+                    <img id="manga2"class="image_tall" src="images/portadas_del_manga/comic_02.jpg">
+                    <div class="containerPdf"><embed id="pdf2" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers2.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf2" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_03.jpg">
+                    <img id="manga3"class="image_tall" src="images/portadas_del_manga/comic_03.jpg">
+                    <div class="containerPdf"><embed id="pdf3" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers3.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf3" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_04.jpg">
+                    <img id="manga4"class="image_tall" src="images/portadas_del_manga/comic_04.jpg">
+                    <div class="containerPdf"><embed id="pdf4" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers4.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf4" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_05.jpg">
+                    <img id="manga5"class="image_tall" src="images/portadas_del_manga/comic_05.jpg">
+                    <div class="containerPdf"><embed id="pdf5" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers5.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf5" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_06.jpg">
+                    <img id="manga6"class="image_tall" src="images/portadas_del_manga/comic_06.jpg">
+                    <div class="containerPdf"><embed id="pdf6" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers6.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf6" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
-                    <img class="image_tall" src="images/portadas_del_manga/comic_07.jpg">
+                    <img id="manga7"class="image_tall" src="images/portadas_del_manga/comic_07.jpg">
+                    <div class="containerPdf"><embed id="pdf7" class="pdf" type="application/pdf"  src="images/TRPdf/tokyoRevengers7.PDF#toolbar=0"></embed></div>
+                    <button id="closePdf7" class="closePdfBtn" onclick="location.reload()" type="button">X</button>
                 </figure>
                 <figure>
                     <img class="image_tall" src="images/portadas_del_manga/comic_08.jpg">
@@ -101,6 +118,9 @@
             </div>
         </section>
     </article>
-    
+    <footer class="containerFooter">
+        <h1>Llamame: +51 981 203 309</h1>
+        <p>Sigueme en: <a href=""></a></p>
+    </footer>
 </body>
 </html>

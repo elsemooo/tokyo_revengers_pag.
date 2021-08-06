@@ -30,22 +30,21 @@ h1#title{
     flex-wrap: wrap;
     justify-content: center;
 }
-.image_tall{
-    width: 300px;
-    position: relative;
-}
+
 .image_tall:hover{
     animation-name: micaela;
     animation-duration: 0.3s;
+    opacity:1;
     animation-fill-mode: forwards;
 }
 @keyframes micaela {
-    0%{
-        bottom: 0;
-    }
     100%{
-        bottom: 20px;
+        transform:scale(1.05);
     }
+}
+.image_tall{
+    width: 300px;
+    position: relative;
 }
 .pdf{
     display: none;
@@ -62,4 +61,35 @@ embed.pdf.active{
     /* background-color: rgba(0 , 0 , 0 , .5); */
     /* outline: 100px black; */
     /* overflow:hidden; */
+}
+.closePdfBtn{
+    display: none;
+}
+.closePdfBtn.active{
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 40px;
+    position: fixed;
+    z-index: 200;
+    top:10%;
+    color: white;
+    text-shadow: 3px 3px 5px white;
+    right: 3%;
+    cursor: pointer;
+}
+path, svg{
+    fill: var(--font-color);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.menuBtn{
+    width: 40px;
+    height: 30px;
+}
+.closeBtn{
+    color: var(--font-color);
+    transform: scaleY(.85);
+    text-shadow: 0 0 10px var(--font-color);
+    cursor: pointer;
 }

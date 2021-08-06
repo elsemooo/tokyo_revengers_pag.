@@ -6,10 +6,10 @@ body{
     background-color: #000;
 }
 nav.containerNav{
-    background-color: rgba(73, 73, 73, 0.829);
+    background-color: var(--color-primario);
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 30;
     justify-content: space-between;
@@ -27,8 +27,9 @@ nav.containerNav{
     cursor: pointer;
 }
 .menuImg{
-    width: 30px;
+    width: 50px;
     display: flex;
+    /* fill: var(--font-color); */
 }
 .botonera{
     width: 100%;
